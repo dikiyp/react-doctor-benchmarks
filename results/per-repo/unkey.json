@@ -5,7 +5,7 @@
   "githubUrl": "https://github.com/unkeyed/unkey",
   "ref": "HEAD",
   "commitSha": "d14a7784fdaf927f38873df20596dc3fb9b22343",
-  "scannedAt": "2026-05-08T10:22:16.968Z",
+  "scannedAt": "2026-05-08T10:27:02.405Z",
   "doctorVersion": "0.0.47",
   "score": 62,
   "scoreLabel": "Needs work",
@@ -13,7 +13,7 @@
   "warningCount": 703,
   "affectedFileCount": 290,
   "totalDiagnosticCount": 705,
-  "scanElapsedMs": 10221,
+  "scanElapsedMs": 6739,
   "install": {
     "attempted": false,
     "success": false,

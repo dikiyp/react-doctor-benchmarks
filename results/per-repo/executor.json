@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "slug": "executor",
+  "name": "executor",
+  "githubUrl": "https://github.com/RhysSullivan/executor",
+  "ref": "HEAD",
+  "commitSha": "ec3f61e0c714073dababf9eb366baa055b997d91",
+  "scannedAt": "2026-05-08T10:27:33.867Z",
+  "doctorVersion": "0.0.47",
+  "score": 96,
+  "scoreLabel": "Great",
+  "errorCount": 3,
+  "warningCount": 3,
+  "affectedFileCount": 4,
+  "totalDiagnosticCount": 6,
+  "scanElapsedMs": 7240,
+  "install": {
+    "attempted": true,
+    "success": true,
+    "packageManager": "bun",
+    "durationMs": 11102
+  },
+  "skipDeadCode": false,
+  "status": "ok",
+  "errorMessage": null
+}
