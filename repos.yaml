@@ -161,3 +161,11 @@ repos:
     notes: |
       Theo / ping.gg's t3code editor — the web frontend lives at apps/web
       under the @t3tools/monorepo workspace; uses bun lockfile.
+
+  - slug: executor
+    name: executor
+    githubUrl: https://github.com/RhysSullivan/executor
+    project: "@executor-js/local"
+    notes: |
+      Rhys Sullivan's local AI executor — apps/local is the Vite + React
+      "web UI" the README describes; uses bun lockfile.
