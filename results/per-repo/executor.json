@@ -5,7 +5,7 @@
   "githubUrl": "https://github.com/RhysSullivan/executor",
   "ref": "HEAD",
   "commitSha": "ec3f61e0c714073dababf9eb366baa055b997d91",
-  "scannedAt": "2026-05-08T10:32:42.019Z",
+  "scannedAt": "2026-05-08T10:56:44.186Z",
   "doctorVersion": "0.0.47",
   "score": 96,
   "scoreLabel": "Great",
@@ -13,12 +13,12 @@
   "warningCount": 3,
   "affectedFileCount": 4,
   "totalDiagnosticCount": 6,
-  "scanElapsedMs": 7282,
+  "scanElapsedMs": 8421,
   "install": {
     "attempted": true,
     "success": true,
     "packageManager": "bun",
-    "durationMs": 11506
+    "durationMs": 10247
   },
   "skipDeadCode": false,
   "status": "ok",

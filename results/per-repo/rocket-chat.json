@@ -5,7 +5,7 @@
   "githubUrl": "https://github.com/RocketChat/Rocket.Chat",
   "ref": "HEAD",
   "commitSha": "2a927fa1362c9d4bb04bb8e26f23a6e3753d9cea",
-  "scannedAt": "2026-05-08T10:32:25.833Z",
+  "scannedAt": "2026-05-08T10:56:29.919Z",
   "doctorVersion": "0.0.47",
   "score": 67,
   "scoreLabel": "Needs work",
@@ -13,12 +13,12 @@
   "warningCount": 567,
   "affectedFileCount": 394,
   "totalDiagnosticCount": 605,
-  "scanElapsedMs": 8174,
+  "scanElapsedMs": 9774,
   "install": {
     "attempted": true,
     "success": false,
     "packageManager": "yarn",
-    "durationMs": 777,
+    "durationMs": 745,
     "errorMessage": "Command failed with exit code 1: yarn install --ignore-scripts"
   },
   "skipDeadCode": true,

@@ -5,7 +5,7 @@
   "githubUrl": "https://github.com/tldraw/tldraw",
   "ref": "HEAD",
   "commitSha": "2eb9f83a599347605ad920c53b64f2b624196aa2",
-  "scannedAt": "2026-05-08T10:30:53.120Z",
+  "scannedAt": "2026-05-08T10:54:42.247Z",
   "doctorVersion": "0.0.47",
   "score": 76,
   "scoreLabel": "Great",
@@ -13,12 +13,12 @@
   "warningCount": 94,
   "affectedFileCount": 51,
   "totalDiagnosticCount": 99,
-  "scanElapsedMs": 13732,
+  "scanElapsedMs": 7120,
   "install": {
     "attempted": true,
     "success": false,
     "packageManager": "yarn",
-    "durationMs": 441,
+    "durationMs": 535,
     "errorMessage": "Command failed with exit code 1: yarn install --ignore-scripts"
   },
   "skipDeadCode": true,
