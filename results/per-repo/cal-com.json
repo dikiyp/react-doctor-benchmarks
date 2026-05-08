@@ -5,7 +5,7 @@
   "githubUrl": "https://github.com/calcom/cal.com",
   "ref": "HEAD",
   "commitSha": "a4a01a0fa8253254e8c7ab848aeca2cf7ccb4f1f",
-  "scannedAt": "2026-05-08T10:08:49.334Z",
+  "scannedAt": "2026-05-08T10:13:21.069Z",
   "doctorVersion": "0.0.47",
   "score": 48,
   "scoreLabel": "Critical",
@@ -13,7 +13,7 @@
   "warningCount": 598,
   "affectedFileCount": 247,
   "totalDiagnosticCount": 611,
-  "scanElapsedMs": 7793,
+  "scanElapsedMs": 7338,
   "install": {
     "attempted": true,
     "success": false,
