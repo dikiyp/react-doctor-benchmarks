@@ -97,6 +97,10 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
           cache: pnpm
 
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
       # Make every common package manager available so per-repo install can
       # use whatever lockfile its upstream actually ships with.
       - name: enable corepack
