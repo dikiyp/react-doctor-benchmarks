@@ -27,6 +27,9 @@ concurrency:
 env:
   PNPM_VERSION: "10.33.3"
   NODE_VERSION: "22"
+  # Silence GitHub's Node 20 actions deprecation warning until upstream
+  # actions ship v5 majors targeting Node 24.
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
 jobs:
   matrix-prep:
