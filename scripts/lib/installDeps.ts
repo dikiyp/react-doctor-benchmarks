@@ -25,6 +25,10 @@ interface InstallOptions {
 export function detectPackageManager(repoDir: string): PackageManager | undefined {
   if (existsSync(resolve(repoDir, "pnpm-lock.yaml"))) return "pnpm";
   if (existsSync(resolve(repoDir, "yarn.lock"))) return "yarn";
+  // bun.lock is the modern text lockfile (>=1.2); bun.lockb is the legacy
+  // binary one. Detect both so repos like pingdotgg/t3code aren't treated
+  // as "no lockfile" and silently skipped.
+  if (existsSync(resolve(repoDir, "bun.lock"))) return "bun";
   if (existsSync(resolve(repoDir, "bun.lockb"))) return "bun";
   if (existsSync(resolve(repoDir, "package-lock.json"))) return "npm";
   return undefined;
