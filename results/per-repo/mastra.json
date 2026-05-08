@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "slug": "mastra",
+  "name": "mastra",
+  "githubUrl": "https://github.com/mastra-ai/mastra",
+  "ref": "HEAD",
+  "commitSha": "afe56d66d70ee2076bb8966bb58868f125849c22",
+  "scannedAt": "2026-05-08T10:33:14.591Z",
+  "doctorVersion": "0.0.47",
+  "score": 70,
+  "scoreLabel": "Needs work",
+  "errorCount": 23,
+  "warningCount": 374,
+  "affectedFileCount": 175,
+  "totalDiagnosticCount": 397,
+  "scanElapsedMs": 9480,
+  "install": {
+    "attempted": true,
+    "success": true,
+    "packageManager": "pnpm",
+    "durationMs": 34179
+  },
+  "skipDeadCode": false,
+  "status": "ok",
+  "errorMessage": null
+}

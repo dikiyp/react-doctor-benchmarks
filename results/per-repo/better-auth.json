@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "slug": "better-auth",
+  "name": "better-auth",
+  "githubUrl": "https://github.com/better-auth/better-auth",
+  "ref": "HEAD",
+  "commitSha": "cf591360e72a8d01741618cd61cdeea84cf8398a",
+  "scannedAt": "2026-05-08T10:32:57.967Z",
+  "doctorVersion": "0.0.47",
+  "score": 69,
+  "scoreLabel": "Needs work",
+  "errorCount": 0,
+  "warningCount": 509,
+  "affectedFileCount": 260,
+  "totalDiagnosticCount": 509,
+  "scanElapsedMs": 7341,
+  "install": {
+    "attempted": true,
+    "success": true,
+    "packageManager": "pnpm",
+    "durationMs": 19203
+  },
+  "skipDeadCode": false,
+  "status": "ok",
+  "errorMessage": null
+}

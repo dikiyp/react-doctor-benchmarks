@@ -5,7 +5,7 @@
   "githubUrl": "https://github.com/pingdotgg/t3code",
   "ref": "HEAD",
   "commitSha": "131234be3fa53d9b0daff3e8116138d5bad079ba",
-  "scannedAt": "2026-05-08T10:27:27.654Z",
+  "scannedAt": "2026-05-08T10:32:28.634Z",
   "doctorVersion": "0.0.47",
   "score": 75,
   "scoreLabel": "Great",
@@ -13,12 +13,12 @@
   "warningCount": 723,
   "affectedFileCount": 242,
   "totalDiagnosticCount": 723,
-  "scanElapsedMs": 9238,
+  "scanElapsedMs": 9699,
   "install": {
     "attempted": true,
     "success": true,
     "packageManager": "bun",
-    "durationMs": 2549
+    "durationMs": 2266
   },
   "skipDeadCode": false,
   "status": "ok",

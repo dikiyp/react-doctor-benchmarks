@@ -5,7 +5,7 @@
   "githubUrl": "https://github.com/twentyhq/twenty",
   "ref": "HEAD",
   "commitSha": "0d057885473342725b4fccd92ac80b6b347ad88b",
-  "scannedAt": "2026-05-08T10:25:49.193Z",
+  "scannedAt": "2026-05-08T10:30:47.183Z",
   "doctorVersion": "0.0.47",
   "score": 59,
   "scoreLabel": "Needs work",
@@ -13,12 +13,12 @@
   "warningCount": 1322,
   "affectedFileCount": 878,
   "totalDiagnosticCount": 1400,
-  "scanElapsedMs": 8074,
+  "scanElapsedMs": 8156,
   "install": {
     "attempted": true,
     "success": false,
     "packageManager": "yarn",
-    "durationMs": 753,
+    "durationMs": 761,
     "errorMessage": "Command failed with exit code 1: yarn install --ignore-scripts"
   },
   "skipDeadCode": true,

@@ -5,7 +5,7 @@
   "githubUrl": "https://github.com/medusajs/medusa",
   "ref": "HEAD",
   "commitSha": "15c938bef93e30fe62f59a78d09cdf412fb92f5a",
-  "scannedAt": "2026-05-08T10:27:13.244Z",
+  "scannedAt": "2026-05-08T10:32:03.977Z",
   "doctorVersion": "0.0.47",
   "score": 65,
   "scoreLabel": "Needs work",
@@ -13,12 +13,12 @@
   "warningCount": 578,
   "affectedFileCount": 240,
   "totalDiagnosticCount": 585,
-  "scanElapsedMs": 7372,
+  "scanElapsedMs": 6911,
   "install": {
     "attempted": true,
     "success": false,
     "packageManager": "yarn",
-    "durationMs": 628,
+    "durationMs": 636,
     "errorMessage": "Command failed with exit code 1: yarn install --ignore-scripts"
   },
   "skipDeadCode": true,

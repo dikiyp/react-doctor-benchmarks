@@ -5,7 +5,7 @@
   "githubUrl": "https://github.com/ToolJet/ToolJet",
   "ref": "HEAD",
   "commitSha": "f2f18d186201bad4e24bdaa32e07e299319ebe1f",
-  "scannedAt": "2026-05-08T10:28:07.383Z",
+  "scannedAt": "2026-05-08T10:33:10.615Z",
   "doctorVersion": "0.0.47",
   "score": 45,
   "scoreLabel": "Critical",
@@ -13,12 +13,12 @@
   "warningCount": 5595,
   "affectedFileCount": 1303,
   "totalDiagnosticCount": 5749,
-  "scanElapsedMs": 7635,
+  "scanElapsedMs": 7512,
   "install": {
     "attempted": true,
     "success": true,
     "packageManager": "npm",
-    "durationMs": 14596
+    "durationMs": 15143
   },
   "skipDeadCode": true,
   "status": "ok",
