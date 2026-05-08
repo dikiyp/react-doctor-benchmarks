@@ -1,4 +1,4 @@
-# react-doctor-benchmarks
+# [react-doctor-benchmarks](https://react.doctor/leaderboard)
 
 Reproducible [`react-doctor`](https://github.com/millionco/react-doctor) scores for popular open-source React frontends.
 
