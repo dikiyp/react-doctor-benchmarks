@@ -5,7 +5,7 @@
   "githubUrl": "https://github.com/shadcn-ui/ui",
   "ref": "HEAD",
   "commitSha": "fc1ca40af4053770c58306a35978537af9dffabb",
-  "scannedAt": "2026-05-08T10:13:50.157Z",
+  "scannedAt": "2026-05-08T10:17:50.032Z",
   "doctorVersion": "0.0.47",
   "score": 60,
   "scoreLabel": "Needs work",
@@ -13,12 +13,12 @@
   "warningCount": 1825,
   "affectedFileCount": 825,
   "totalDiagnosticCount": 1829,
-  "scanElapsedMs": 10093,
+  "scanElapsedMs": 10424,
   "install": {
     "attempted": true,
     "success": true,
     "packageManager": "pnpm",
-    "durationMs": 15194
+    "durationMs": 15298
   },
   "skipDeadCode": false,
   "status": "ok",

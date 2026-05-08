@@ -5,7 +5,7 @@
   "githubUrl": "https://github.com/onlook-dev/onlook",
   "ref": "HEAD",
   "commitSha": "a242be584fa9c71ca5be9e5e7a2640595c4200be",
-  "scannedAt": "2026-05-08T10:12:44.241Z",
+  "scannedAt": "2026-05-08T10:16:40.539Z",
   "doctorVersion": "0.0.47",
   "score": 55,
   "scoreLabel": "Needs work",
@@ -13,11 +13,13 @@
   "warningCount": 877,
   "affectedFileCount": 227,
   "totalDiagnosticCount": 933,
-  "scanElapsedMs": 6434,
+  "scanElapsedMs": 6608,
   "install": {
-    "attempted": false,
+    "attempted": true,
     "success": false,
-    "errorMessage": "no lockfile detected"
+    "packageManager": "bun",
+    "durationMs": 62,
+    "errorMessage": "Command failed with ENOENT: bun install --ignore-scripts\nspawn bun ENOENT"
   },
   "skipDeadCode": true,
   "status": "ok",

@@ -5,7 +5,7 @@
   "githubUrl": "https://github.com/makeplane/plane",
   "ref": "HEAD",
   "commitSha": "4c1bdd1d625fa3f1141e8af9c15423946472069e",
-  "scannedAt": "2026-05-08T10:13:10.867Z",
+  "scannedAt": "2026-05-08T10:16:59.950Z",
   "doctorVersion": "0.0.47",
   "score": 65,
   "scoreLabel": "Needs work",
@@ -13,12 +13,12 @@
   "warningCount": 1004,
   "affectedFileCount": 562,
   "totalDiagnosticCount": 1005,
-  "scanElapsedMs": 10640,
+  "scanElapsedMs": 10289,
   "install": {
     "attempted": true,
     "success": true,
     "packageManager": "pnpm",
-    "durationMs": 11023
+    "durationMs": 10118
   },
   "skipDeadCode": false,
   "status": "ok",

@@ -21,7 +21,7 @@ The scores below are produced by GitHub Actions on a weekly cron (and on demand)
 | 9 | [medusajs/admin](https://github.com/medusajs/medusa) | 🟡 `█████████████░░░░░░░` **65**/100 | 7 | 578 | 240 | `15c938b` |
 | 10 | [unkey](https://github.com/unkeyed/unkey) | 🟡 `████████████░░░░░░░░` **62**/100 | 2 | 703 | 290 | `d14a778` |
 | 11 | [shadcn/ui](https://github.com/shadcn-ui/ui) | 🟡 `████████████░░░░░░░░` **60**/100 | 4 | 1825 | 825 | `fc1ca40` |
-| 12 | [twenty](https://github.com/twentyhq/twenty) | 🟡 `████████████░░░░░░░░` **59**/100 | 78 | 1322 | 878 | `837a946` |
+| 12 | [twenty](https://github.com/twentyhq/twenty) | 🟡 `████████████░░░░░░░░` **59**/100 | 78 | 1322 | 878 | `0d05788` |
 | 13 | [trigger.dev](https://github.com/triggerdotdev/trigger.dev) | 🟡 `████████████░░░░░░░░` **58**/100 | 19 | 1376 | 446 | `3e6458f` |
 | 14 | [formbricks](https://github.com/formbricks/formbricks) | 🟡 `███████████░░░░░░░░░` **56**/100 | 8 | 1298 | 497 | `7e2c439` |
 | 15 | [onlook](https://github.com/onlook-dev/onlook) | 🟡 `███████████░░░░░░░░░` **55**/100 | 56 | 877 | 227 | `a242be5` |
@@ -35,7 +35,7 @@ The scores below are produced by GitHub Actions on a weekly cron (and on demand)
 | 23 | [dub](https://github.com/dubinc/dub) | 🔴 `████████░░░░░░░░░░░░` **42**/100 | 40 | 2180 | 873 | `a5fa025` |
 | 24 | [sentry](https://github.com/getsentry/sentry) | 🔴 `████████░░░░░░░░░░░░` **41**/100 | 52 | 3171 | 1543 | `84e2c71` |
 
-<sub>Last updated <strong>2026-05-08T10:15:16.730Z</strong> · react-doctor `0.0.47` · 24 scored, 0 skipped/failed · raw results in [`results/latest.json`](results/latest.json)</sub>
+<sub>Last updated <strong>2026-05-08T10:19:21.722Z</strong> · react-doctor `0.0.47` · 24 scored, 0 skipped/failed · raw results in [`results/latest.json`](results/latest.json)</sub>
 
 <!-- LEADERBOARD:END -->
 

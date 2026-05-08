@@ -5,7 +5,7 @@
   "githubUrl": "https://github.com/getsentry/sentry",
   "ref": "HEAD",
   "commitSha": "84e2c71edfb347d7db0e22967a790e1d93f2728c",
-  "scannedAt": "2026-05-08T10:12:57.671Z",
+  "scannedAt": "2026-05-08T10:16:56.102Z",
   "doctorVersion": "0.0.47",
   "score": 41,
   "scoreLabel": "Critical",
@@ -13,7 +13,7 @@
   "warningCount": 3171,
   "affectedFileCount": 1543,
   "totalDiagnosticCount": 3223,
-  "scanElapsedMs": 11917,
+  "scanElapsedMs": 12484,
   "install": {
     "attempted": false,
     "success": false

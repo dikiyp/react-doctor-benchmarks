@@ -5,7 +5,7 @@
   "githubUrl": "https://github.com/dubinc/dub",
   "ref": "HEAD",
   "commitSha": "a5fa0252c16d512b8900813243e8a6e407948a25",
-  "scannedAt": "2026-05-08T10:13:51.081Z",
+  "scannedAt": "2026-05-08T10:17:51.399Z",
   "doctorVersion": "0.0.47",
   "score": 42,
   "scoreLabel": "Critical",
@@ -13,12 +13,12 @@
   "warningCount": 2180,
   "affectedFileCount": 873,
   "totalDiagnosticCount": 2220,
-  "scanElapsedMs": 9724,
+  "scanElapsedMs": 10775,
   "install": {
     "attempted": true,
     "success": true,
     "packageManager": "pnpm",
-    "durationMs": 21302
+    "durationMs": 22148
   },
   "skipDeadCode": false,
   "status": "ok",

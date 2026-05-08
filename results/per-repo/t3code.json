@@ -5,7 +5,7 @@
   "githubUrl": "https://github.com/pingdotgg/t3code",
   "ref": "HEAD",
   "commitSha": "131234be3fa53d9b0daff3e8116138d5bad079ba",
-  "scannedAt": "2026-05-08T10:14:25.967Z",
+  "scannedAt": "2026-05-08T10:18:25.945Z",
   "doctorVersion": "0.0.47",
   "score": 78,
   "scoreLabel": "Great",
@@ -13,11 +13,13 @@
   "warningCount": 290,
   "affectedFileCount": 47,
   "totalDiagnosticCount": 290,
-  "scanElapsedMs": 8342,
+  "scanElapsedMs": 6080,
   "install": {
-    "attempted": false,
+    "attempted": true,
     "success": false,
-    "errorMessage": "no lockfile detected"
+    "packageManager": "bun",
+    "durationMs": 59,
+    "errorMessage": "Command failed with ENOENT: bun install --ignore-scripts\nspawn bun ENOENT"
   },
   "skipDeadCode": true,
   "status": "ok",
