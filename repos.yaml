@@ -153,3 +153,11 @@ repos:
     project: "@rocket.chat/meteor"
     skipDeadCode: true
     notes: Megarepo; we scan source-only.
+
+  - slug: t3code
+    name: t3code
+    githubUrl: https://github.com/pingdotgg/t3code
+    project: "@t3tools/web"
+    notes: |
+      Theo / ping.gg's t3code editor — the web frontend lives at apps/web
+      under the @t3tools/monorepo workspace; uses bun lockfile.
