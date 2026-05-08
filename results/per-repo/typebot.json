@@ -5,7 +5,7 @@
   "githubUrl": "https://github.com/baptisteArno/typebot.io",
   "ref": "HEAD",
   "commitSha": "85eb843c420e2a3d4f1e4a3ed6f1b71bd6d3bea9",
-  "scannedAt": "2026-05-08T10:18:15.627Z",
+  "scannedAt": "2026-05-08T10:22:30.761Z",
   "doctorVersion": "0.0.47",
   "score": 69,
   "scoreLabel": "Needs work",
@@ -13,13 +13,13 @@
   "warningCount": 277,
   "affectedFileCount": 145,
   "totalDiagnosticCount": 279,
-  "scanElapsedMs": 6941,
+  "scanElapsedMs": 6964,
   "install": {
     "attempted": true,
     "success": false,
     "packageManager": "bun",
-    "durationMs": 64,
-    "errorMessage": "Command failed with ENOENT: bun install --ignore-scripts\nspawn bun ENOENT"
+    "durationMs": 15043,
+    "errorMessage": "Command failed with exit code 1: bun install --ignore-scripts"
   },
   "skipDeadCode": true,
   "status": "ok",

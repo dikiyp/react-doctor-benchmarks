@@ -5,7 +5,7 @@
   "githubUrl": "https://github.com/triggerdotdev/trigger.dev",
   "ref": "HEAD",
   "commitSha": "3e6458f9b5fae3332de5070c7198bdef18287187",
-  "scannedAt": "2026-05-08T10:18:42.531Z",
+  "scannedAt": "2026-05-08T10:22:40.246Z",
   "doctorVersion": "0.0.47",
   "score": 58,
   "scoreLabel": "Needs work",
@@ -13,12 +13,12 @@
   "warningCount": 1376,
   "affectedFileCount": 446,
   "totalDiagnosticCount": 1395,
-  "scanElapsedMs": 10368,
+  "scanElapsedMs": 9004,
   "install": {
     "attempted": true,
     "success": true,
     "packageManager": "pnpm",
-    "durationMs": 33656
+    "durationMs": 29977
   },
   "skipDeadCode": false,
   "status": "ok",

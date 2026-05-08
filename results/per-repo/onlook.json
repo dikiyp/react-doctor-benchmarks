@@ -5,23 +5,22 @@
   "githubUrl": "https://github.com/onlook-dev/onlook",
   "ref": "HEAD",
   "commitSha": "a242be584fa9c71ca5be9e5e7a2640595c4200be",
-  "scannedAt": "2026-05-08T10:16:40.539Z",
+  "scannedAt": "2026-05-08T10:21:11.080Z",
   "doctorVersion": "0.0.47",
-  "score": 55,
+  "score": 52,
   "scoreLabel": "Needs work",
   "errorCount": 56,
-  "warningCount": 877,
-  "affectedFileCount": 227,
-  "totalDiagnosticCount": 933,
-  "scanElapsedMs": 6608,
+  "warningCount": 988,
+  "affectedFileCount": 287,
+  "totalDiagnosticCount": 1044,
+  "scanElapsedMs": 12715,
   "install": {
     "attempted": true,
-    "success": false,
+    "success": true,
     "packageManager": "bun",
-    "durationMs": 62,
-    "errorMessage": "Command failed with ENOENT: bun install --ignore-scripts\nspawn bun ENOENT"
+    "durationMs": 8680
   },
-  "skipDeadCode": true,
+  "skipDeadCode": false,
   "status": "ok",
   "errorMessage": null
 }

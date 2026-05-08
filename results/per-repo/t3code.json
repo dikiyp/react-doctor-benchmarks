@@ -5,23 +5,22 @@
   "githubUrl": "https://github.com/pingdotgg/t3code",
   "ref": "HEAD",
   "commitSha": "131234be3fa53d9b0daff3e8116138d5bad079ba",
-  "scannedAt": "2026-05-08T10:18:25.945Z",
+  "scannedAt": "2026-05-08T10:22:43.872Z",
   "doctorVersion": "0.0.47",
-  "score": 78,
+  "score": 75,
   "scoreLabel": "Great",
   "errorCount": 0,
-  "warningCount": 290,
-  "affectedFileCount": 47,
-  "totalDiagnosticCount": 290,
-  "scanElapsedMs": 6080,
+  "warningCount": 723,
+  "affectedFileCount": 242,
+  "totalDiagnosticCount": 723,
+  "scanElapsedMs": 8635,
   "install": {
     "attempted": true,
-    "success": false,
+    "success": true,
     "packageManager": "bun",
-    "durationMs": 59,
-    "errorMessage": "Command failed with ENOENT: bun install --ignore-scripts\nspawn bun ENOENT"
+    "durationMs": 2588
   },
-  "skipDeadCode": true,
+  "skipDeadCode": false,
   "status": "ok",
   "errorMessage": null
 }
