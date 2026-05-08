@@ -169,3 +169,20 @@ repos:
     notes: |
       Rhys Sullivan's local AI executor — apps/local is the Vite + React
       "web UI" the README describes; uses bun lockfile.
+
+  - slug: better-auth
+    name: better-auth
+    githubUrl: https://github.com/better-auth/better-auth
+    project: docs
+    notes: |
+      better-auth's first-party React frontend is the Next.js docs site
+      under docs/; demo/* are example apps and aren't representative of
+      the project's own code.
+
+  - slug: mastra
+    name: mastra
+    githubUrl: https://github.com/mastra-ai/mastra
+    project: "@mastra/playground-ui"
+    notes: |
+      Mastra's React UI library — the playground-ui package ships the
+      actual components rendered in the Mastra dev playground.
