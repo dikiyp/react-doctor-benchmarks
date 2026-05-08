@@ -50,6 +50,87 @@ The scores below are produced by GitHub Actions on a weekly cron (and on demand)
 
 The harness pins nothing about the upstream repos by default — every entry tracks `HEAD` of its default branch, and the SHA actually scanned is recorded in each result row so any score is reproducible. To pin a specific commit, set the `ref` field on a `repos.yaml` entry to a branch, tag, or SHA.
 
+## Consuming the leaderboard
+
+Every CI run writes [`results/leaderboard.json`](results/leaderboard.json) — a slim, stable JSON blob that downstream repos can fetch and drop in. It mirrors [`react-doctor`'s `LeaderboardEntry` interface](https://github.com/millionco/react-doctor/blob/main/packages/website/src/app/leaderboard/leaderboard-entries.ts) so a one-shot replacement is straightforward.
+
+**Stable URL** (always `main`, always the latest run):
+
+```
+https://raw.githubusercontent.com/millionco/react-doctor-benchmarks/main/results/leaderboard.json
+```
+
+**Schema**:
+
+```ts
+interface ConsumerLeaderboard {
+  schemaVersion: 1;
+  generatedAt: string;          // ISO 8601 UTC
+  doctorVersion: string | null; // e.g. "0.0.47"
+  source: { repo: string; path: string; docs: string };
+  entries: Array<{
+    slug: string;               // "tldraw"
+    name: string;               // "tldraw"
+    githubUrl: string;          // "https://github.com/tldraw/tldraw"
+    packageName: string;        // workspace project name passed via --project
+    score: number;              // 0–100
+    errorCount: number;
+    warningCount: number;
+    fileCount: number;          // affectedFileCount in react-doctor's JsonReport
+    commitSha: string | null;   // SHA we actually scanned
+    scannedAt: string;
+  }>;                           // sorted desc by score
+}
+```
+
+**Example: regenerate `react-doctor`'s `leaderboard-entries.ts` from CI**:
+
+```yaml
+# .github/workflows/refresh-leaderboard.yml in millionco/react-doctor
+name: refresh leaderboard
+on:
+  schedule:
+    - cron: "0 7 * * 1"  # one hour after react-doctor-benchmarks runs
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions: { contents: write, pull-requests: write }
+    steps:
+      - uses: actions/checkout@v4
+      - name: fetch latest leaderboard
+        run: |
+          curl -sSfL \
+            https://raw.githubusercontent.com/millionco/react-doctor-benchmarks/main/results/leaderboard.json \
+            -o /tmp/leaderboard.json
+      - name: codegen leaderboard-entries.ts
+        run: node scripts/codegen-leaderboard.mjs /tmp/leaderboard.json \
+              > packages/website/src/app/leaderboard/leaderboard-entries.ts
+      - uses: peter-evans/create-pull-request@v6
+        with:
+          title: "chore: refresh leaderboard from react-doctor-benchmarks"
+          commit-message: "chore: refresh leaderboard"
+          branch: chore/refresh-leaderboard
+```
+
+Where `scripts/codegen-leaderboard.mjs` is whatever projection makes sense for your downstream — typically:
+
+```js
+// scripts/codegen-leaderboard.mjs
+import { readFileSync } from "node:fs";
+const data = JSON.parse(readFileSync(process.argv[2], "utf8"));
+const rows = data.entries.map((e) => `  ${JSON.stringify({
+  name: e.name, githubUrl: e.githubUrl, packageName: e.packageName,
+  score: e.score, errorCount: e.errorCount, warningCount: e.warningCount,
+  fileCount: e.fileCount,
+})},`).join("\n");
+process.stdout.write(`// Auto-generated from ${data.source.repo} on ${data.generatedAt}\n` +
+  `export const RAW_ENTRIES = [\n${rows}\n];\n`);
+```
+
+The blob is rewritten on every CI run, so even when scores don't change the `generatedAt` timestamp does — you can safely diff or skip in your downstream codegen.
+
 ## Adding a project
 
 Open a PR that adds an entry to [`repos.yaml`](repos.yaml). The schema is defined and validated in [`scripts/lib/config.ts`](scripts/lib/config.ts):

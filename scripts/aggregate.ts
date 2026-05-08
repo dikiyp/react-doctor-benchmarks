@@ -10,11 +10,45 @@ import { existsSync } from "node:fs";
 import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import { join, resolve } from "node:path";
 import { z } from "zod";
-import { loadRepos } from "./lib/config.ts";
+import { loadRepos, type RepoConfig } from "./lib/config.ts";
 import type { AggregatedReport, BenchmarkResult } from "./lib/types.ts";
 
 const PER_REPO_DIR = resolve(process.cwd(), "results", "per-repo");
 const LATEST_PATH = resolve(process.cwd(), "results", "latest.json");
+const LEADERBOARD_PATH = resolve(process.cwd(), "results", "leaderboard.json");
+
+/**
+ * Stable, consumer-friendly shape designed to drop into millionco/react-doctor's
+ * `LeaderboardEntry` interface (see leaderboard-entries.ts). Anything
+ * downstream — the react-doctor website, dashboards, blog posts — should
+ * fetch this file rather than `latest.json`, which is internal.
+ *
+ *   curl -sSfL https://raw.githubusercontent.com/millionco/react-doctor-benchmarks/main/results/leaderboard.json
+ */
+interface ConsumerLeaderboardEntry {
+  slug: string;
+  name: string;
+  githubUrl: string;
+  packageName: string;
+  score: number;
+  errorCount: number;
+  warningCount: number;
+  fileCount: number;
+  commitSha: string | null;
+  scannedAt: string;
+}
+
+interface ConsumerLeaderboard {
+  schemaVersion: 1;
+  generatedAt: string;
+  doctorVersion: string | null;
+  source: {
+    repo: "millionco/react-doctor-benchmarks";
+    path: "results/leaderboard.json";
+    docs: "https://github.com/millionco/react-doctor-benchmarks#consuming-the-leaderboard";
+  };
+  entries: ConsumerLeaderboardEntry[];
+}
 
 const ResultSchema = z.object({
   schemaVersion: z.literal(1),
@@ -127,6 +161,54 @@ async function main(): Promise<void> {
     console.log(`  ${r.status.padEnd(15)} ${r.slug.padEnd(20)} ${score}`);
   }
   if (!existsSync(LATEST_PATH)) process.exit(1);
+
+  // Also emit results/leaderboard.json — a slim, stable shape designed for
+  // downstream consumers to fetch via raw.githubusercontent.com and replace
+  // their own data file (e.g. react-doctor's leaderboard-entries.ts).
+  const leaderboard = buildConsumerLeaderboard(report, repos);
+  await writeFile(LEADERBOARD_PATH, `${JSON.stringify(leaderboard, null, 2)}\n`, "utf8");
+  console.log(`✓ wrote ${LEADERBOARD_PATH} (${leaderboard.entries.length} entries)`);
+}
+
+function buildConsumerLeaderboard(report: AggregatedReport, repos: RepoConfig[]): ConsumerLeaderboard {
+  const repoBySlug = new Map(repos.map((r) => [r.slug, r] as const));
+
+  const entries: ConsumerLeaderboardEntry[] = report.results
+    .filter(
+      (r): r is BenchmarkResult & { score: number } => r.status === "ok" && typeof r.score === "number",
+    )
+    .map((r) => {
+      const repo = repoBySlug.get(r.slug);
+      // packageName mirrors react-doctor's hardcoded interface; default to the
+      // display name when no workspace project is configured (single-package
+      // repos).
+      const packageName = repo?.project ?? r.name;
+      return {
+        slug: r.slug,
+        name: r.name,
+        githubUrl: r.githubUrl,
+        packageName,
+        score: r.score,
+        errorCount: r.errorCount,
+        warningCount: r.warningCount,
+        fileCount: r.affectedFileCount,
+        commitSha: r.commitSha,
+        scannedAt: r.scannedAt,
+      };
+    })
+    .sort((a, b) => b.score - a.score);
+
+  return {
+    schemaVersion: 1,
+    generatedAt: report.generatedAt,
+    doctorVersion: report.doctorVersion,
+    source: {
+      repo: "millionco/react-doctor-benchmarks",
+      path: "results/leaderboard.json",
+      docs: "https://github.com/millionco/react-doctor-benchmarks#consuming-the-leaderboard",
+    },
+    entries,
+  };
 }
 
 main().catch((err) => {
