@@ -94,8 +94,8 @@ repos:
   - slug: shadcn-ui
     name: shadcn/ui
     githubUrl: https://github.com/shadcn-ui/ui
-    scanDir: apps/www
-    notes: Next.js docs site for the shadcn/ui component library.
+    project: v4
+    notes: Next.js docs site for the shadcn/ui component library (apps/v4).
 
   - slug: lobe-chat
     name: lobehub/lobe-chat
@@ -111,8 +111,9 @@ repos:
   - slug: unkey
     name: unkey
     githubUrl: https://github.com/unkeyed/unkey
-    project: dashboard
-    notes: Next.js API-key management dashboard.
+    scanDir: web
+    project: "@unkey/dashboard"
+    notes: Next.js API-key management dashboard (lives under web/apps/dashboard).
 
   - slug: trigger-dev
     name: trigger.dev
@@ -149,6 +150,6 @@ repos:
   - slug: rocket-chat
     name: rocket.chat
     githubUrl: https://github.com/RocketChat/Rocket.Chat
-    project: rocketchat
+    project: "@rocket.chat/meteor"
     skipDeadCode: true
     notes: Megarepo; we scan source-only.
