@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "slug": "formbricks",
+  "name": "formbricks",
+  "githubUrl": "https://github.com/formbricks/formbricks",
+  "ref": "HEAD",
+  "commitSha": "7e2c4393252699d130ffd09e564581200e741c9f",
+  "scannedAt": "2026-05-08T09:54:56.028Z",
+  "doctorVersion": "0.0.47",
+  "score": 56,
+  "scoreLabel": "Needs work",
+  "errorCount": 8,
+  "warningCount": 1298,
+  "affectedFileCount": 497,
+  "totalDiagnosticCount": 1306,
+  "scanElapsedMs": 8350,
+  "install": {
+    "attempted": true,
+    "success": true,
+    "packageManager": "pnpm",
+    "durationMs": 16412
+  },
+  "skipDeadCode": false,
+  "status": "ok",
+  "errorMessage": null
+}

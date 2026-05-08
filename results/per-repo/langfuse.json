@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "slug": "langfuse",
+  "name": "langfuse",
+  "githubUrl": "https://github.com/langfuse/langfuse",
+  "ref": "HEAD",
+  "commitSha": "4c9fc1c241bd43e4af9c88c14e7d64913f4ab9cb",
+  "scannedAt": "2026-05-08T09:55:54.455Z",
+  "doctorVersion": "0.0.47",
+  "score": 54,
+  "scoreLabel": "Needs work",
+  "errorCount": 24,
+  "warningCount": 1501,
+  "affectedFileCount": 518,
+  "totalDiagnosticCount": 1525,
+  "scanElapsedMs": 11503,
+  "install": {
+    "attempted": true,
+    "success": true,
+    "packageManager": "pnpm",
+    "durationMs": 17902
+  },
+  "skipDeadCode": false,
+  "status": "ok",
+  "errorMessage": null
+}

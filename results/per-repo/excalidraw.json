@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "slug": "excalidraw",
+  "name": "excalidraw",
+  "githubUrl": "https://github.com/excalidraw/excalidraw",
+  "ref": "HEAD",
+  "commitSha": "b2b2815954f6561f0980bef8997750dabec16e87",
+  "scannedAt": "2026-05-08T09:55:48.476Z",
+  "doctorVersion": "0.0.47",
+  "score": 69,
+  "scoreLabel": "Needs work",
+  "errorCount": 1,
+  "warningCount": 497,
+  "affectedFileCount": 156,
+  "totalDiagnosticCount": 498,
+  "scanElapsedMs": 8900,
+  "install": {
+    "attempted": true,
+    "success": true,
+    "packageManager": "yarn",
+    "durationMs": 51764
+  },
+  "skipDeadCode": false,
+  "status": "ok",
+  "errorMessage": null
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "slug": "cal-com",
+  "name": "cal.com",
+  "githubUrl": "https://github.com/calcom/cal.com",
+  "ref": "HEAD",
+  "commitSha": "a4a01a0fa8253254e8c7ab848aeca2cf7ccb4f1f",
+  "scannedAt": "2026-05-08T09:55:21.280Z",
+  "doctorVersion": "0.0.47",
+  "score": 48,
+  "scoreLabel": "Critical",
+  "errorCount": 13,
+  "warningCount": 598,
+  "affectedFileCount": 247,
+  "totalDiagnosticCount": 611,
+  "scanElapsedMs": 7688,
+  "install": {
+    "attempted": true,
+    "success": false,
+    "packageManager": "yarn",
+    "durationMs": 792,
+    "errorMessage": "Command failed with exit code 1: yarn install --ignore-scripts"
+  },
+  "skipDeadCode": true,
+  "status": "ok",
+  "errorMessage": null
+}

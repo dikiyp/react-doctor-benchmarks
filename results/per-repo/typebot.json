@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "slug": "typebot",
+  "name": "typebot",
+  "githubUrl": "https://github.com/baptisteArno/typebot.io",
+  "ref": "HEAD",
+  "commitSha": "85eb843c420e2a3d4f1e4a3ed6f1b71bd6d3bea9",
+  "scannedAt": "2026-05-08T09:56:12.818Z",
+  "doctorVersion": "0.0.47",
+  "score": 69,
+  "scoreLabel": "Needs work",
+  "errorCount": 2,
+  "warningCount": 277,
+  "affectedFileCount": 145,
+  "totalDiagnosticCount": 279,
+  "scanElapsedMs": 7343,
+  "install": {
+    "attempted": false,
+    "success": false,
+    "errorMessage": "no lockfile detected"
+  },
+  "skipDeadCode": true,
+  "status": "ok",
+  "errorMessage": null
+}

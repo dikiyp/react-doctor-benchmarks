@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "slug": "onlook",
+  "name": "onlook",
+  "githubUrl": "https://github.com/onlook-dev/onlook",
+  "ref": "HEAD",
+  "commitSha": "a242be584fa9c71ca5be9e5e7a2640595c4200be",
+  "scannedAt": "2026-05-08T09:54:42.310Z",
+  "doctorVersion": "0.0.47",
+  "score": 55,
+  "scoreLabel": "Needs work",
+  "errorCount": 56,
+  "warningCount": 877,
+  "affectedFileCount": 227,
+  "totalDiagnosticCount": 933,
+  "scanElapsedMs": 7455,
+  "install": {
+    "attempted": false,
+    "success": false,
+    "errorMessage": "no lockfile detected"
+  },
+  "skipDeadCode": true,
+  "status": "ok",
+  "errorMessage": null
+}

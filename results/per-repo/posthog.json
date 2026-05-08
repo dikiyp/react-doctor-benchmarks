@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "slug": "posthog",
+  "name": "posthog",
+  "githubUrl": "https://github.com/PostHog/posthog",
+  "ref": "HEAD",
+  "commitSha": "72ccdcd3ad944638e4a73420d78edcff0bf83546",
+  "scannedAt": "2026-05-08T09:55:33.757Z",
+  "doctorVersion": "0.0.47",
+  "score": 45,
+  "scoreLabel": "Critical",
+  "errorCount": 612,
+  "warningCount": 4273,
+  "affectedFileCount": 1534,
+  "totalDiagnosticCount": 4885,
+  "scanElapsedMs": 15085,
+  "install": {
+    "attempted": true,
+    "success": true,
+    "packageManager": "pnpm",
+    "durationMs": 31020
+  },
+  "skipDeadCode": false,
+  "status": "ok",
+  "errorMessage": null
+}

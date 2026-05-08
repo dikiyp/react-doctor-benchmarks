@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "slug": "unkey",
+  "name": "unkey",
+  "githubUrl": "https://github.com/unkeyed/unkey",
+  "ref": "HEAD",
+  "commitSha": "d14a7784fdaf927f38873df20596dc3fb9b22343",
+  "scannedAt": "2026-05-08T09:55:55.963Z",
+  "doctorVersion": "0.0.47",
+  "score": null,
+  "scoreLabel": null,
+  "errorCount": 0,
+  "warningCount": 0,
+  "affectedFileCount": 0,
+  "totalDiagnosticCount": 0,
+  "scanElapsedMs": 6396,
+  "install": {
+    "attempted": false,
+    "success": false,
+    "errorMessage": "no lockfile detected"
+  },
+  "skipDeadCode": true,
+  "status": "scan-failed",
+  "errorMessage": "No package.json found in /tmp/rdb-unkey-lDACQ0/repo"
+}

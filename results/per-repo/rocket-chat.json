@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "slug": "rocket-chat",
+  "name": "rocket.chat",
+  "githubUrl": "https://github.com/RocketChat/Rocket.Chat",
+  "ref": "HEAD",
+  "commitSha": "2a927fa1362c9d4bb04bb8e26f23a6e3753d9cea",
+  "scannedAt": "2026-05-08T09:56:07.789Z",
+  "doctorVersion": "0.0.47",
+  "score": null,
+  "scoreLabel": null,
+  "errorCount": 0,
+  "warningCount": 0,
+  "affectedFileCount": 0,
+  "totalDiagnosticCount": 0,
+  "scanElapsedMs": 4986,
+  "install": {
+    "attempted": true,
+    "success": false,
+    "packageManager": "yarn",
+    "durationMs": 779,
+    "errorMessage": "Command failed with exit code 1: yarn install --ignore-scripts"
+  },
+  "skipDeadCode": true,
+  "status": "scan-failed",
+  "errorMessage": "Project \"rocketchat\" not found. Available: @rocket.chat/meteor, @rocket.chat/uikit-playground, @rocket.chat/fuselage-ui-kit, @rocket.chat/gazzodown, @rocket.chat/livechat, @rocket.chat/mock-providers, @rocket.chat/storybook-config, @rocket.chat/ui-avatar, @rocket.chat/ui-client, @rocket.chat/ui-composer, @rocket.chat/ui-contexts, @rocket.chat/ui-video-conf, @rocket.chat/ui-voip, @rocket.chat/web-ui-registration, @rocket.chat/omnichannel-transcript, @rocket.chat/pdf-worker"
+}

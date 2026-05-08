@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "slug": "shadcn-ui",
+  "name": "shadcn/ui",
+  "githubUrl": "https://github.com/shadcn-ui/ui",
+  "ref": "HEAD",
+  "commitSha": "fc1ca40af4053770c58306a35978537af9dffabb",
+  "scannedAt": "2026-05-08T09:55:23.183Z",
+  "doctorVersion": null,
+  "score": null,
+  "scoreLabel": null,
+  "errorCount": 0,
+  "warningCount": 0,
+  "affectedFileCount": 0,
+  "totalDiagnosticCount": 0,
+  "scanElapsedMs": 0,
+  "install": {
+    "attempted": false,
+    "success": false
+  },
+  "skipDeadCode": false,
+  "status": "scan-failed",
+  "errorMessage": "scanDir does not exist after clone: apps/www"
+}
