@@ -5,7 +5,7 @@
   "githubUrl": "https://github.com/payloadcms/payload",
   "ref": "HEAD",
   "commitSha": "e1442e7c0411b84646409f9eeff1922ea66dc6a0",
-  "scannedAt": "2026-05-08T09:55:27.618Z",
+  "scannedAt": "2026-05-08T10:01:13.579Z",
   "doctorVersion": "0.0.47",
   "score": 69,
   "scoreLabel": "Needs work",
@@ -13,12 +13,12 @@
   "warningCount": 750,
   "affectedFileCount": 391,
   "totalDiagnosticCount": 751,
-  "scanElapsedMs": 30138,
+  "scanElapsedMs": 30116,
   "install": {
     "attempted": true,
     "success": true,
     "packageManager": "pnpm",
-    "durationMs": 21016
+    "durationMs": 21426
   },
   "skipDeadCode": false,
   "status": "ok",

@@ -5,7 +5,7 @@
   "githubUrl": "https://github.com/nodejs/nodejs.org",
   "ref": "HEAD",
   "commitSha": "125b760694fd99bf482aa2819965cd992cbfbf56",
-  "scannedAt": "2026-05-08T09:55:32.940Z",
+  "scannedAt": "2026-05-08T10:01:07.688Z",
   "doctorVersion": "0.0.47",
   "score": 87,
   "scoreLabel": "Great",
@@ -13,12 +13,12 @@
   "warningCount": 191,
   "affectedFileCount": 176,
   "totalDiagnosticCount": 191,
-  "scanElapsedMs": 7685,
+  "scanElapsedMs": 7790,
   "install": {
     "attempted": true,
     "success": true,
     "packageManager": "pnpm",
-    "durationMs": 10913
+    "durationMs": 10498
   },
   "skipDeadCode": false,
   "status": "ok",

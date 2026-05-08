@@ -5,7 +5,7 @@
   "githubUrl": "https://github.com/onlook-dev/onlook",
   "ref": "HEAD",
   "commitSha": "a242be584fa9c71ca5be9e5e7a2640595c4200be",
-  "scannedAt": "2026-05-08T09:54:42.310Z",
+  "scannedAt": "2026-05-08T10:00:26.856Z",
   "doctorVersion": "0.0.47",
   "score": 55,
   "scoreLabel": "Needs work",
@@ -13,7 +13,7 @@
   "warningCount": 877,
   "affectedFileCount": 227,
   "totalDiagnosticCount": 933,
-  "scanElapsedMs": 7455,
+  "scanElapsedMs": 8158,
   "install": {
     "attempted": false,
     "success": false,

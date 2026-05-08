@@ -5,7 +5,7 @@
   "githubUrl": "https://github.com/appsmithorg/appsmith",
   "ref": "HEAD",
   "commitSha": "c268bcecd87ea22d606b35d2297c0603cc7218f0",
-  "scannedAt": "2026-05-08T09:56:12.446Z",
+  "scannedAt": "2026-05-08T10:02:01.739Z",
   "doctorVersion": "0.0.47",
   "score": 50,
   "scoreLabel": "Needs work",
@@ -13,7 +13,7 @@
   "warningCount": 1620,
   "affectedFileCount": 786,
   "totalDiagnosticCount": 1709,
-  "scanElapsedMs": 9163,
+  "scanElapsedMs": 9460,
   "install": {
     "attempted": false,
     "success": false,

@@ -5,7 +5,7 @@
   "githubUrl": "https://github.com/supabase/supabase",
   "ref": "HEAD",
   "commitSha": "04c9fb7c3eadf6bf5e10618cb5a3835a595d6d57",
-  "scannedAt": "2026-05-08T09:55:36.244Z",
+  "scannedAt": "2026-05-08T10:01:14.882Z",
   "doctorVersion": "0.0.47",
   "score": 45,
   "scoreLabel": "Critical",
@@ -13,12 +13,12 @@
   "warningCount": 2090,
   "affectedFileCount": 914,
   "totalDiagnosticCount": 2108,
-  "scanElapsedMs": 14110,
+  "scanElapsedMs": 15510,
   "install": {
     "attempted": true,
     "success": true,
     "packageManager": "pnpm",
-    "durationMs": 28076
+    "durationMs": 27989
   },
   "skipDeadCode": false,
   "status": "ok",
