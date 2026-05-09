@@ -18,6 +18,12 @@
 repos:
   # ── Ported from upstream millionco/react-doctor leaderboard-entries.ts ────────
 
+  - slug: bloom-mobile
+    name: Bloom Mobile
+    githubUrl: https://github.com/slipe-fun/Bloom-mobile
+    packageManager: pnpm
+    skipInstall: true
+
   - slug: tldraw
     name: tldraw
     githubUrl: https://github.com/tldraw/tldraw
